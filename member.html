@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <link rel="icon" type="image/png" href="img/श्री_सिद्धिराज_चॅरिटेबल_ट्रस्ट__मालेगाव-removebg-preview.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page_title">मंडळ</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   
+
+    .main-header {
+      position: relative;
+      background-color: #fff;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    .main-header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .logo {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+    h1[data-key="title"] {
+      font-size: 1.8rem;
+      line-height: 1.4;
+      max-width: 100%;
+      word-break: break-word;
+      margin: 10px 0 20px;
+    }
+
+    /* ✅ Top right tools (Search + Language) */
+    .top-right-tools {
+      position: absolute;
+      top: 10px;
+      right: -130px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 100;
+    }
+
+    .search-box input {
+      margin: -50%;
+      margin-right: 100%;
+      margin-left: -100%;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 180px;
+    }
+
+  
+    .language-wrapper .dropdown {
+      position: relative;
+      margin-top: -20%;
+    }
+
+    .language-wrapper .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 90%;
+      
+      right: 40%;
+      background: #fff;
+      border: 1px solid #ccc;
+      list-style: none;
+      padding: 5px 0;
+      min-width: 100px;
+      z-index: 10;
+    }
+
+    .language-wrapper .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .language-wrapper a {
+      text-decoration: none;
+      padding: 6px 12px;
+      display: block;
+      color: #333;
+    }
+@media (max-width: 768px) {
+  .language-wrapper {
+    justify-content: center;
+    padding: 10px;
+    padding-top: 0%;
+  }
+
+  .language-wrapper .dropdown-content {
+    right: 0;
+    top: 130%;
+  }
+
+  .language-wrapper a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+    .copy-icon-btn {
+      background-color: #444444;
+      color: white;
+      padding: 6px 12px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .copy-icon-btn:hover {
+      background-color: #e65c00;
+    }
+
+    .floating-news-bar {
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 1000;
+      font-size: 1rem;
+      border-bottom: 2px solid #ffa000;
+    }
+
+    .floating-news-bar .scrolling-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scrollLeft 15s linear infinite;
+    }
+
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    .top-right-tools {
+  right: -10px;
+}
+
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 60px;
+      right: 120px;
+      z-index: 999;
+      font-size: 28px;
+      border: none;
+      outline: none;
+      background-color: #ff6f00;
+      color: white;
+      cursor: pointer;
+      padding: 16px 20px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(255, 111, 0, 0.4);
+      animation: floatUpDown 2s infinite ease-in-out, fadeIn 1s ease;
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    @media (max-width: 768px) {
+  #scrollTopBtn {
+    right: 20px;
+    bottom: 50px;
+    font-size: 20px;
+    padding: 12px 16px;
+  }
+}
+
+/* Responsive for mobiles */
+@media (max-width: 480px) {
+  #scrollTopBtn {
+    right: 15px;
+    bottom: 40px;
+    font-size: 18px;
+    padding: 10px 14px;
+  }
+}
+
+    #scrollTopBtn:hover {
+      background-color: #d84315;
+      transform: scale(1.15) rotate(10deg);
+      box-shadow: 0 0 20px rgba(255, 102, 0, 0.6);
+    }
+
+    @keyframes floatUpDown {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+ 
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+  #searchBox {
+  width: 100%;
+  
+   justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 9px 490px;
+  padding: 14px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5),
+              0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  outline: none;
+  color: #333;
+}
+
+#searchBox:focus {
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.7),
+              0 0 40px rgba(0, 183, 255, 0.3),
+              0 0 80px rgba(0, 183, 255, 0.2);
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  #searchBox {
+     margin: 0px 0px;
+    font-size: 16px;
+    padding: 12px 16px;
+    margin-top: 2%;
+    justify-content: center;
+  align-items: center;
+  }
+}
+.member-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.member-card {
+  position: relative; /* for numbering */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px 15px 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* circular photo */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.member-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Member Number */
+.member-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff6f61;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Grid */
+@media (min-width: 1024px) {
+  .member-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <!-- 🔝 Top-right tools -->
+    <div class="top-right-tools">
+      
+      <div class="language-wrapper">
+        <ul class="nav-menu">
+          <li class="dropdown">
+            <a href="#" data-key="language_label">🌐 भाषा</a>
+            <ul class="dropdown-content">
+              <li><a href="#" onclick="changeLanguage('mr')">मराठी</a></li>
+              <li><a href="#" onclick="changeLanguage('hi')">हिंदी</a></li>
+              <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🔖 Logo + Title -->
+    <img src="img/श्री_सिद्धिराज_चॅरिटेबल_ट्रस्ट__मालेगाव-removebg-preview.png" alt="Logo" class="logo">
+  <h1 class="main-title" data-key="title_display"></h1>
+
+    <!-- 🧭 Navigation -->
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" data-key="home">होम</a></li>
+        <li><a href="trust.html" data-key="trust">ट्रस्ट</a></li>
+        <li><a href="member.html" data-key="member">सभासद / सदस्य</a></li>
+        <li><a href="social.html" data-key="social">सामाजिक उपक्रम</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- 📢 Scrolling News -->
+<div class="floating-news-bar">
+  <div class="scrolling-text" data-key="app_coming">📢 श्री सिद्धिराज चॅरिटेबल ट्रस्ट अ‍ॅप लवकरच येत आहे! | Shri Siddhiraj Charitable Trust App Coming Soon!</div>
+</div>
+
+<input type="text" id="searchBox" placeholder="🔍 सदस्य शोधा / Search ...">
+
+
+<div class="member-grid">
+  <div class="member-card">
+    <div class="member-number">12</div>
+    <img src="img/m1.jpg" alt="Member 1">
+    <p>
+      <span data-key="member12_name">श्री अविनाश खरवंडीकर</span><br>
+      <span data-key="member12_address">धुळे, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">13</div>
+    <img src="img/m2.jpg" alt="Member 2">
+    <p>
+      <span data-key="member13_name">सौ आदिती मिलिंद सोनवणे</span><br>
+      <span data-key="member13_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">14</div>
+    <img src="img/m3.jpg" alt="Member 3">
+    <p>
+      <span data-key="member14_name">श्री ईश्वर अनिल गुप्ता</span><br>
+      <span data-key="member14_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">15</div>
+    <img src="img/m4.jpg" alt="Member 4">
+    <p>
+      <span data-key="member15_name">श्री प्रवीण भालचंद्र जोशी</span><br>
+      <span data-key="member15_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">16</div>
+    <img src="img/m5.jpg" alt="Member 5">
+    <p>
+      <span data-key="member16_name">सौ शुभांगी प्रवीण जोशी</span><br>
+      <span data-key="member16_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">17</div>
+    <img src="img/m6.jpg" alt="Member 6">
+    <p>
+      <span data-key="member17_name">डॉ जितेन शरद क्षत्रिय</span><br>
+      <span data-key="member17_address">सिन्नर, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">18</div>
+    <img src="img/m7.jpg" alt="Member 7">
+    <p>
+      <span data-key="member18_name">श्री राजेश सुरेश गवळी</span><br>
+      <span data-key="member18_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">19</div>
+    <img src="img/m8.jpg" alt="Member 8">
+    <p>
+      <span data-key="member19_name">श्री उमेश रघुनंदन बोरसे</span><br>
+      <span data-key="member19_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">20</div>
+    <img src="img/m9.jpg" alt="Member 9">
+    <p>
+      <span data-key="member20_name">श्री मोहन हरिभाऊ पवार</span><br>
+      <span data-key="member20_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">21</div>
+    <img src="img/m10.jpg" alt="Member 10">
+    <p>
+      <span data-key="member21_name">श्री प्रवीण भालचंद्र जोशी</span><br>
+      <span data-key="member21_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">22</div>
+    <img src="img/m11.jpg" alt="Member 11">
+    <p>
+      <span data-key="member22_name">श्री वाल्मीक सोनवणे</span><br>
+      <span data-key="member22_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">23</div>
+    <img src="img/m12.jpg" alt="Member 12">
+    <p>
+      <span data-key="member23_name">श्री दिनेश विठ्ठल खैरनार</span><br>
+      <span data-key="member23_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">24</div>
+    <img src="img/m13.jpg" alt="Member 13">
+    <p>
+      <span data-key="member24_name">श्री मनोहर एकनाथ सोनवणे</span><br>
+      <span data-key="member24_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">25</div>
+    <img src="img/m14.jpg" alt="Member 14">
+    <p>
+      <span data-key="member25_name">श्री भूषण गाधारी</span><br>
+      <span data-key="member25_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">26</div>
+    <img src="img/m15.jpg" alt="Member 15">
+    <p>
+      <span data-key="member26_name">श्री पुरुषोत्तम मनोहर पगार</span><br>
+      <span data-key="member26_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">27</div>
+    <img src="img/m16.jpg" alt="Member 16">
+    <p>
+      <span data-key="member27_name">श्री प्रशांत शंकर क्षीरसागर</span><br>
+      <span data-key="member27_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">28</div>
+    <img src="img/m17.jpg" alt="Member 17">
+    <p>
+      <span data-key="member28_name">श्री राहुल मधुकऱ वाणी</span><br>
+      <span data-key="member28_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+
+  <div class="member-card">
+    <div class="member-number">29</div>
+    <img src="img/m18.jpg" alt="Member 18">
+    <p>
+      <span data-key="member29_name">श्री वैभव खैरनार</span><br>
+      <span data-key="member29_address">मालेगाव, महाराष्ट्र</span>
+    </p>
+  </div>
+</div>
+
+
+<script>
+// Member data with 3 languages
+document.querySelectorAll("[data-key]").forEach(el => {
+  const key = el.getAttribute("data-key");
+  if (translations[lang][key]) el.innerHTML = translations[lang][key];
+});
+
+let membersPerPage = 50;
+let currentPage = 1;
+let currentLang = localStorage.getItem('selectedLanguage') || 'mr';
+
+// Display members
+function displayMembers(page, filteredMembers = members) {
+  const memberGrid = document.getElementById("memberGrid");
+  memberGrid.innerHTML = "";
+  const start = (page - 1) * membersPerPage;
+  const end = start + membersPerPage;
+  const currentMembers = filteredMembers.slice(start, end);
+
+  currentMembers.forEach((member, index) => {
+    const div = document.createElement("div");
+    div.className = "member-card";
+    div.setAttribute("data-index", start + index); // Add index
+    div.innerHTML = `
+      <img src="${member.image}" alt="${member.name[currentLang]}">
+      <div class="member-name member-name-${start + index}">${member.name[currentLang]}</div>
+      <div class="member-address member-address-${start + index}">${member.address[currentLang]}</div>
+    `;
+    memberGrid.appendChild(div);
+  });
+}
+
+// Pagination
+function setupPagination(filteredMembers = members){
+  const pagination = document.getElementById("pagination");
+  pagination.innerHTML = "";
+  const pageCount = Math.ceil(filteredMembers.length/membersPerPage);
+
+  for(let i=1;i<=pageCount;i++){
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    if(i===currentPage) btn.classList.add("active");
+    btn.addEventListener("click",()=>{
+      currentPage=i;
+      displayMembers(currentPage,filteredMembers);
+      setupPagination(filteredMembers);
+    });
+    pagination.appendChild(btn);
+  }
+}
+function changeLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('selectedLanguage', lang);
+
+  // Update static texts
+  document.querySelectorAll("[data-key]").forEach(el => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang][key]) el.innerHTML = translations[lang][key];
+  });
+
+  // Update members instantly
+  const memberCards = document.querySelectorAll(".member-card");
+  memberCards.forEach(card => {
+    const index = parseInt(card.getAttribute("data-index"));
+    if (members[index]) {
+      card.querySelector(".member-name").textContent = members[index].name[lang];
+      card.querySelector(".member-address").textContent = members[index].address[lang];
+    }
+  });
+}
+
+
+// Language switch
+function changeLanguage(lang){
+  currentLang = lang;
+  localStorage.setItem('selectedLanguage',lang);
+
+  // Update static texts
+  document.querySelectorAll("[data-key]").forEach(el=>{
+    const key = el.getAttribute("data-key");
+    if(translations[lang][key]) el.innerHTML = translations[lang][key];
+  });
+
+  // Re-render members instantly
+  displayMembers(currentPage);
+
+  // Reapply search filter
+  const searchValue = document.getElementById("searchBox").value.toLowerCase().trim();
+  if(searchValue) filterMembers(searchValue);
+}
+
+// Search
+function filterMembers(searchValue){
+  const filtered = members.filter(member=>
+    member.name[currentLang].toLowerCase().includes(searchValue) ||
+    member.address[currentLang].toLowerCase().includes(searchValue)
+  );
+  currentPage=1;
+  displayMembers(currentPage,filtered);
+  setupPagination(filtered);
+}
+
+// Event listener for search input
+document.getElementById("searchBox").addEventListener("input",function(){
+  const searchValue = this.value.toLowerCase().trim();
+  filterMembers(searchValue);
+});
+
+// Initial load
+document.addEventListener("DOMContentLoaded",()=>{
+  displayMembers(currentPage);
+  setupPagination();
+  changeLanguage(currentLang);
+});
+
+
+</script>
+
+<!-- 🦶 Footer -->
+<footer>
+  <p>&copy; 2025 
+    <span data-key="title">श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक)</span> | 
+    <span data-key="rights_reserved">सर्व हक्क राखीव</span> | 
+    <a href="privacy.html" target="_blank" data-key="privacy_policy">गोपनीयता धोरण||अटी व शर्ती</a>
+  </p>
+</footer>
+
+<!-- 🔤 Language Switcher -->
+<script>
+const translations = {
+  
+  en: {
+    language_label: "🌐 Language",
+    page_title: "Members",
+    title: "𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)",
+    title_display: "𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)",
+    home: "Home",
+    trust: "Trust",
+    member: "Members",
+    social: "Social Initiatives",
+        app_coming: "📢𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)App Coming Soon!......",
+    
+    rights_reserved: "All rights reserved",
+    privacy_policy: "Privacy Policy || Terms & Conditions",
+    member12_name: "Mr. Avinash Kharwandikar",
+    member12_address: "Dhule, Maharashtra",
+    member13_name: "Mrs. Aditi Milind Sonawane",
+    member13_address: "Malegaon, Maharashtra",
+    member14_name: "Mr. Ishwar Anil Gupta",
+    member14_address: "Malegaon, Maharashtra",
+    member15_name: "Mr. Pravin Bhalchandra Joshi",
+    member15_address: "Malegaon, Maharashtra",
+    member16_name: "Mrs. Shubhangi Pravin Joshi",
+    member16_address: "Malegaon, Maharashtra",
+    member17_name: "Dr. Jiten Sharad Kshatriya",
+    member17_address: "Sinnar, Maharashtra",
+    member18_name: "Mr. Rajesh Suresh Gavli",
+    member18_address: "Malegaon, Maharashtra",
+    member19_name: "Mr. Umesh Raghunandan Borse",
+    member19_address: "Malegaon, Maharashtra",
+    member20_name: "Mr. Mohan Haribhau Pawar",
+    member20_address: "Malegaon, Maharashtra",
+    member21_name: "Mr. Pravin Bhalchandra Joshi",
+    member21_address: "Malegaon, Maharashtra",
+    member22_name: "Mr. Valmik Sonawane",
+    member22_address: "Malegaon, Maharashtra",
+    member23_name: "Mr. Dinesh Vitthal Khairnar",
+    member23_address: "Malegaon, Maharashtra",
+    member24_name: "Mr. Manohar Eknath Sonawane",
+    member24_address: "Malegaon, Maharashtra",
+    member25_name: "Mr. Bhushan Gadhari",
+    member25_address: "Malegaon, Maharashtra",
+    member26_name: "Mr. Purushottam Manohar Pagar",
+    member26_address: "Malegaon, Maharashtra",
+    member27_name: "Mr. Prashant Shankar Kshirsagar",
+    member27_address: "Malegaon, Maharashtra",
+    member28_name: "Mr. Rahul Madhukar Vani",
+    member28_address: "Malegaon, Maharashtra",
+    member29_name: "Mr. Vaibhav Khairnar",
+    member29_address: "Malegaon, Maharashtra"
+  },
+  hi: {
+    language_label: "🌐 भाषा",
+    page_title: "सभासद / सदस्य",
+    title: "श्री सद्गुरु सिद्धिराज चैरिटेबल ट्रस्ट, मालेगांव (नाशिक)",
+    title_display: `श्री सद्गुरु सिद्धिराज चैरिटेबल ट्रस्ट, मालेगांव (नाशिक)<br>𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)`,
+    home: "होम",
+    trust: "ट्रस्ट",
+    member: "सभासद / सदस्य",
+    social: "सामाजिक पहल",
+      app_coming: "📢 श्री सद्गुरु सिद्धिराज चैरिटेबल ट्रस्ट ऐप जल्द ही आ रहा है!......",
+    rights_reserved: "सभी अधिकार सुरक्षित",
+    privacy_policy: "गोपनीयता नीति || नियम और शर्तें",
+     member12_name: "श्री अविनाश खरवंडीकर",
+    member12_address: "धुले, महाराष्ट्र",
+    member13_name: "श्रीमती आदिती मिलिंद सोनवणे",
+    member13_address: "मालेगांव, महाराष्ट्र",
+    member14_name: "श्री ईश्वर अनिल गुप्ता",
+    member14_address: "मालेगांव, महाराष्ट्र",
+    member15_name: "श्री प्रवीण भालचंद्र जोशी",
+    member15_address: "मालेगांव, महाराष्ट्र",
+    member16_name: "श्रीमती शुभांगी प्रवीण जोशी",
+    member16_address: "मालेगांव, महाराष्ट्र",
+    member17_name: "डॉ जितेन शरद क्षत्रिय",
+    member17_address: "सिन्नर, महाराष्ट्र",
+    member18_name: "श्री राजेश सुरेश गवली",
+    member18_address: "मालेगांव, महाराष्ट्र",
+    member19_name: "श्री उमेश रघुनंदन बोरसे",
+    member19_address: "मालेगांव, महाराष्ट्र",
+    member20_name: "श्री मोहन हरिभाऊ पवार",
+    member20_address: "मालेगांव, महाराष्ट्र",
+    member21_name: "श्री प्रवीण भालचंद्र जोशी",
+    member21_address: "मालेगांव, महाराष्ट्र",
+    member22_name: "श्री वाल्मीक सोनवणे",
+    member22_address: "मालेगांव, महाराष्ट्र",
+    member23_name: "श्री दिनेश विठ्ठल खैरनार",
+    member23_address: "मालेगांव, महाराष्ट्र",
+    member24_name: "श्री मनोहर एकनाथ सोनवणे",
+    member24_address: "मालेगांव, महाराष्ट्र",
+    member25_name: "श्री भूषण गाधारी",
+    member25_address: "मालेगांव, महाराष्ट्र",
+    member26_name: "श्री पुरुषोत्तम मनोहर पगार",
+    member26_address: "मालेगांव, महाराष्ट्र",
+    member27_name: "श्री प्रशांत शंकर क्षीरसागर",
+    member27_address: "मालेगांव, महाराष्ट्र",
+    member28_name: "श्री राहुल मधुकर वाणी",
+    member28_address: "मालेगांव, महाराष्ट्र",
+    member29_name: "श्री वैभव खैरनार",
+    member29_address: "मालेगांव, महाराष्ट्र"
+  },
+  mr: {
+    language_label: "🌐 भाषा",
+    page_title: "सभासद / सदस्य",
+    title: "श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक)",
+    title_display: `श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक)<br>𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)`,
+    home: "होम",
+    trust: "ट्रस्ट",
+    member: "सभासद / सदस्य",
+    social: "सामाजिक उपक्रम",
+    app_coming: "📢 श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट अ‍ॅप लवकरच येत आहे!......",
+    rights_reserved: "सर्व हक्क राखीव",
+    privacy_policy: "गोपनीयता धोरण||अटी व शर्ती",
+    member12_name: "श्री अविनाश खरवंडीकर",
+    member12_address: "धुळे, महाराष्ट्र",
+    member13_name: "सौ आदिती मिलिंद सोनवणे",
+    member13_address: "मालेगाव, महाराष्ट्र",
+    member14_name: "श्री ईश्वर अनिल गुप्ता",
+    member14_address: "मालेगाव, महाराष्ट्र",
+    member15_name: "श्री प्रवीण भालचंद्र जोशी",
+    member15_address: "मालेगाव, महाराष्ट्र",
+    member16_name: "सौ शुभांगी प्रवीण जोशी",
+    member16_address: "मालेगाव, महाराष्ट्र",
+    member17_name: "डॉ जितेन शरद क्षत्रिय",
+    member17_address: "सिन्नर, महाराष्ट्र",
+    member18_name: "श्री राजेश सुरेश गवळी",
+    member18_address: "मालेगाव, महाराष्ट्र",
+    member19_name: "श्री उमेश रघुनंदन बोरसे",
+    member19_address: "मालेगाव, महाराष्ट्र",
+    member20_name: "श्री मोहन हरिभाऊ पवार",
+    member20_address: "मालेगाव, महाराष्ट्र",
+    member21_name: "श्री प्रवीण भालचंद्र जोशी",
+    member21_address: "मालेगाव, महाराष्ट्र",
+    member22_name: "श्री वाल्मीक सोनवणे",
+    member22_address: "मालेगाव, महाराष्ट्र",
+    member23_name: "श्री दिनेश विठ्ठल खैरनार",
+    member23_address: "मालेगाव, महाराष्ट्र",
+    member24_name: "श्री मनोहर एकनाथ सोनवणे",
+    member24_address: "मालेगाव, महाराष्ट्र",
+    member25_name: "श्री भूषण गाधारी",
+    member25_address: "मालेगाव, महाराष्ट्र",
+    member26_name: "श्री पुरुषोत्तम मनोहर पगार",
+    member26_address: "मालेगाव, महाराष्ट्र",
+    member27_name: "श्री प्रशांत शंकर क्षीरसागर",
+    member27_address: "मालेगाव, महाराष्ट्र",
+    member28_name: "श्री राहुल मधुकऱ वाणी",
+    member28_address: "मालेगाव, महाराष्ट्र",
+    member29_name: "श्री वैभव खैरनार",
+    member29_address: "मालेगाव, महाराष्ट्र"
+  }
+};
+function updateMemberCards(lang) {
+  translations[lang].members.forEach((member, index) => {
+    const nameEl = document.querySelector(`.member-name-${index + 1}`);
+    const addrEl = document.querySelector(`.member-address-${index + 1}`);
+    if (nameEl) nameEl.textContent = member.name;
+    if (addrEl) addrEl.textContent = member.address;
+  });
+}
+
+
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll("[data-key]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-key");
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  localStorage.setItem('selectedLanguage', lang);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem('selectedLanguage') || 'mr';
+  changeLanguage(savedLang);
+});
+</script>
+
+<!-- 🔝 Scroll Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="वर जा">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="white">
+    <path d="M12 4 4 12h5v8h6v-8h5z" />
+  </svg>
+</button>
+
+<script>
+window.onscroll = function () {
+  const btn = document.getElementById("scrollTopBtn");
+  btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+<!-- 🔍 Member Search -->
+<script>
+document.getElementById("searchInput").addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase().trim();
+  const members = document.querySelectorAll(".trustee");
+
+  members.forEach(member => {
+    const memberText = member.innerText.toLowerCase();
+    member.style.display = memberText.includes(searchValue) ? "block" : "none";
+  });
+});
+</script>
+
+<!-- 🧑‍🤝‍🧑 Dynamic Members -->
+<script>
+function renderPublicMembers() {
+  const memberList = document.getElementById("memberList");
+  const members = JSON.parse(localStorage.getItem("members")) || [];
+  memberList.innerHTML = "";
+
+  members.forEach(member => {
+    const div = document.createElement("div");
+    div.className = "trustee";
+    div.innerHTML = `
+      <img src="${member.photo}" alt="${member.name}">
+      <p>${member.name}</p>
+    `;
+    memberList.appendChild(div);
+  });
+}
+
+window.onload = renderPublicMembers;
+</script>
+
+</body>
+</html>
+

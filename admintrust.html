@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <link rel="icon" type="image/png" href="img/श्री_सिद्धिराज_चॅरिटेबल_ट्रस्ट__मालेगाव-removebg-preview.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title data-key="title">श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक) | 𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   main-header {
+  background: #fa992a;
+  padding: 15px 20px;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container to align logo, title, and nav */
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Logo styling */
+.logo {
+  max-width: 150px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+/* Main title - clean, long, and wraps nicely */
+.main-title {
+  flex: 1 1 auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 15px;
+  margin: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Navigation bar styling */
+.navbar {
+  flex: 0 0 auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background: #ddd;
+}
+
+
+
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 2.4rem;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    padding: 10px 10px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
+
+    .trustee-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .trustee {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      background: #f9f9f9;
+      position: relative;
+    }
+
+    .trustee img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .admin-controls {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .admin-controls input,
+    .admin-controls button {
+      margin: 6px;
+      padding: 6px;
+      border-radius: 5px;
+    }
+
+    .remove-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .edit-mode input {
+      margin: 5px 0;
+      padding: 5px;
+      width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <img src="img/श्री_सिद्धिराज_चॅरिटेबल_ट्रस्ट__मालेगाव-removebg-preview.png" alt="Logo" class="logo">
+   श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक)<br>
+        <span style="font-size: 1rem; color: #666;">𝐒𝐡𝐫𝐞𝐞 𝐒𝐚𝐝𝐠𝐮𝐫𝐮 𝐒𝐢𝐝𝐝𝐡𝐢𝐑𝐚𝐣 𝐂𝐡𝐚𝐫𝐢𝐭𝐚𝐛𝐥𝐞 𝐓𝐫𝐮𝐬𝐭, 𝐌𝐚𝐥𝐞𝐠𝐚𝐨𝐧 (𝐍𝐚𝐬𝐡𝐢𝐤)</span>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">होम</a></li>
+        <li><a href="trust.html">ट्रस्ट</a></li>
+        <li><a href="member.html" data-key="member">सभासद / सदस्य</a></li>
+        <li><a href="social.html">सामाजिक उपक्रम</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+  <section class="trustees">
+    <h2>विश्वस्त मंडळ (Admin)</h2>
+    <div class="trustee-grid" id="trusteeGrid">
+      <!-- Trustees will appear here -->
+    </div>
+  </section>
+
+<!-- 👨‍💼 Admin Panel to Add Members -->
+<section id="adminPanel" style="margin: 40px auto; max-width: 500px; padding: 20px; border: 2px dashed #ccc; border-radius: 12px;">
+  <h3>➕ Add New Member</h3>
+  <form id="addMemberForm">
+    <input type="text" id="memberName" placeholder="Enter Member Name" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc;"><br>
+    <input type="file" id="memberImage" accept="image/*" required style="margin-bottom: 10px;"><br>
+    <button type="submit" style="padding: 10px 20px; background-color: #28a745; border: none; border-radius: 8px; color: white; cursor: pointer;">Add Member</button>
+  </form>
+  
+</section>
+<script>
+  // Load members from localStorage or empty array
+  let members = JSON.parse(localStorage.getItem("members")) || [];
+
+  function renderMembers() {
+    const grid = document.getElementById("memberGrid");
+    grid.innerHTML = "";
+    members.forEach((member, index) => {
+      const div = document.createElement("div");
+      div.className = "member-card";
+      div.innerHTML = `
+        <button class="remove-btn" onclick="removeMember(${index})">×</button>
+        <img src="${member.photo}" alt="${member.name}">
+        <p>${member.name}</p>
+      `;
+      grid.appendChild(div);
+    });
+  }
+
+  function removeMember(index) {
+    if (confirm("हा सदस्य काढायचा आहे का?")) {
+      members.splice(index, 1);
+      localStorage.setItem("members", JSON.stringify(members));
+      renderMembers();
+    }
+  }
+
+  document.getElementById("addMemberForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("memberName").value.trim();
+    const file = document.getElementById("memberImage").files[0];
+
+    if (!name || !file) return;
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      members.push({ name: name, photo: e.target.result });
+      localStorage.setItem("members", JSON.stringify(members));
+      renderMembers();
+      document.getElementById("addMemberForm").reset();
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Load on page
+  window.onload = renderMembers;
+</script>
+
+
+<script>
+let trustees = [
+  { name: "Harshal Sawant", mobile: "९८९८९८९८९८", photo: "img/tr1.png" },
+  { name: "Demo", mobile: "९८९८९८९८९८", photo: "img/tr2.png" }
+];
+
+function renderTrustees() {
+  const grid = document.getElementById("trusteeGrid");
+  grid.innerHTML = "";
+  trustees.forEach((trustee, index) => {
+    const div = document.createElement("div");
+    div.className = "trustee";
+    div.innerHTML = `
+      <button class="remove-btn" onclick="removeTrustee(${index})">×</button>
+      <img src="${trustee.photo}" alt="Trustee ${index + 1}">
+      <div class="edit-mode">
+        <input type="text" value="${trustee.name}" onchange="updateName(${index}, this.value)">
+        <input type="text" value="${trustee.mobile}" onchange="updateMobile(${index}, this.value)">
+        <input type="text" value="${trustee.photo}" onchange="updatePhoto(${index}, this.value)">
+      </div>
+    `;
+    grid.appendChild(div);
+  });
+}
+
+function addTrustee() {
+  const name = document.getElementById("name").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
+  const photo = document.getElementById("photo").value.trim();
+
+  if (!name || !mobile || !photo) {
+    alert("कृपया सर्व माहिती भरा!");
+    return;
+  }
+
+  trustees.push({ name, mobile, photo });
+  renderTrustees();
+
+  document.getElementById("name").value = "";
+  document.getElementById("mobile").value = "";
+  document.getElementById("photo").value = "";
+}
+
+function removeTrustee(index) {
+  if (confirm("हा ट्रस्टी काढायचा आहे का?")) {
+    trustees.splice(index, 1);
+    renderTrustees();
+  }
+}
+
+function updateName(index, value) {
+  trustees[index].name = value;
+}
+
+function updateMobile(index, value) {
+  trustees[index].mobile = value;
+}
+
+function updatePhoto(index, value) {
+  trustees[index].photo = value;
+  renderTrustees(); // re-render image
+}
+
+window.onload = renderTrustees;
+</script>
+
+<footer>
+  <p>&copy; 2025 श्री सद्गुरु सिद्धीराज चॅरिटेबल ट्रस्ट, मालेगांव (नाशिक) | सर्व हक्क राखीव</p>
+</footer>
+
+</body>
+</html>
